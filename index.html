@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<title>Epoch Converter</title>
+<style>
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Epoch Converter</h1>
+
+    <label for="epoch">Enter Epoch Time:</label>
+    <input type="text" id="epoch" placeholder="Enter Epoch Time (Unix Timestamp)" value="">
+
+    <label for="fromEpoch">From Epoch:</label>
+    <select id="fromEpoch">
+        <option value="1">Unix Timestamp</option>
+        <option value="2">JavaScript Time</option>
+    </select>
+
+    <label for="toEpoch">To Epoch:</label>
+    <select id="toEpoch">
+        <option value="1">Unix Timestamp</option>
+        <option value="2">JavaScript Time</option>
+    </select>
+
+    <button onclick="convertEpoch()">Convert</button>
+
+    <div id="result"></div>
+    <div id="mskTime"></div>
+    <div id="gmtTime"></div>
+    <div id="relativeTime"></div>
+    <div id="currentUnixEpoch"></div>
+</div>
+
+<script src="index.js">
+
+</script>
+
+</body>
+</html>
